@@ -17,7 +17,8 @@ import (
 	"time"
 )
 
-const rawFile = "https://raw.githubusercontent.com/mysql/mysql-server/5.7/sql/share/errmsg-utf8.txt"
+// const rawFile = "https://raw.githubusercontent.com/mysql/mysql-server/5.7/sql/share/errmsg-utf8.txt"
+const rawFile = "https://raw.githubusercontent.com/mysql/mysql-server/8.0/share/errmsg-utf8.txt"
 const textFile = "errmsg-utf8.txt"
 const errPrefix = "ER_"
 const warnPrefix = "WARN_"
