@@ -889,6 +889,7 @@ const (
 	ER_PLUGIN_CANNOT_BE_UNINSTALLED                                                  MySQLError = 1883
 	ER_GTID_UNSAFE_BINLOG_SPLITTABLE_STATEMENT_AND_GTID_GROUP                        MySQLError = 1884
 	ER_SLAVE_HAS_MORE_GTIDS_THAN_MASTER                                              MySQLError = 1885
+	ER_MISSING_KEY                                                                   MySQLError = 1886
 	ER_FILE_CORRUPT                                                                  MySQLError = 3000
 	ER_ERROR_ON_MASTER                                                               MySQLError = 3001
 	ER_INCONSISTENT_ERROR                                                            MySQLError = 3002
@@ -1093,6 +1094,29 @@ const (
 	ER_KEYRING_MIGRATION_FAILURE                                                     MySQLError = 3201
 	ER_KEYRING_ACCESS_DENIED_ERROR                                                   MySQLError = 3202
 	ER_KEYRING_MIGRATION_STATUS                                                      MySQLError = 3203
+	ER_PLUGIN_FAILED_TO_OPEN_TABLES                                                  MySQLError = 3204
+	ER_PLUGIN_FAILED_TO_OPEN_TABLE                                                   MySQLError = 3205
+	ER_AUDIT_LOG_NO_KEYRING_PLUGIN_INSTALLED                                         MySQLError = 3206
+	ER_AUDIT_LOG_ENCRYPTION_PASSWORD_HAS_NOT_BEEN_SET                                MySQLError = 3207
+	ER_AUDIT_LOG_COULD_NOT_CREATE_AES_KEY                                            MySQLError = 3208
+	ER_AUDIT_LOG_ENCRYPTION_PASSWORD_CANNOT_BE_FETCHED                               MySQLError = 3209
+	ER_AUDIT_LOG_JSON_FILTERING_NOT_ENABLED                                          MySQLError = 3210
+	ER_AUDIT_LOG_UDF_INSUFFICIENT_PRIVILEGE                                          MySQLError = 3211
+	ER_AUDIT_LOG_SUPER_PRIVILEGE_REQUIRED                                            MySQLError = 3212
+	ER_COULD_NOT_REINITIALIZE_AUDIT_LOG_FILTERS                                      MySQLError = 3213
+	ER_AUDIT_LOG_UDF_INVALID_ARGUMENT_TYPE                                           MySQLError = 3214
+	ER_AUDIT_LOG_UDF_INVALID_ARGUMENT_COUNT                                          MySQLError = 3215
+	ER_AUDIT_LOG_HAS_NOT_BEEN_INSTALLED                                              MySQLError = 3216
+	ER_AUDIT_LOG_UDF_READ_INVALID_MAX_ARRAY_LENGTH_ARG_TYPE                          MySQLError = 3217
+	ER_AUDIT_LOG_UDF_READ_INVALID_MAX_ARRAY_LENGTH_ARG_VALUE                         MySQLError = 3218
+	ER_AUDIT_LOG_JSON_FILTER_PARSING_ERROR                                           MySQLError = 3219
+	ER_AUDIT_LOG_JSON_FILTER_NAME_CANNOT_BE_EMPTY                                    MySQLError = 3220
+	ER_AUDIT_LOG_JSON_USER_NAME_CANNOT_BE_EMPTY                                      MySQLError = 3221
+	ER_AUDIT_LOG_JSON_FILTER_DOES_NOT_EXISTS                                         MySQLError = 3222
+	ER_AUDIT_LOG_USER_FIRST_CHARACTER_MUST_BE_ALPHANUMERIC                           MySQLError = 3223
+	ER_AUDIT_LOG_USER_NAME_INVALID_CHARACTER                                         MySQLError = 3224
+	ER_AUDIT_LOG_HOST_NAME_INVALID_CHARACTER                                         MySQLError = 3225
+	WARN_DEPRECATED_MAXDB_SQL_MODE_FOR_TIMESTAMP                                     MySQLError = 3226
 )
 
 //go:generate stringer -type=MySQLError
