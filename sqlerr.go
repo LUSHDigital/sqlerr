@@ -1117,6 +1117,8 @@ const (
 	ER_AUDIT_LOG_USER_NAME_INVALID_CHARACTER                                         MySQLError = 3224
 	ER_AUDIT_LOG_HOST_NAME_INVALID_CHARACTER                                         MySQLError = 3225
 	WARN_DEPRECATED_MAXDB_SQL_MODE_FOR_TIMESTAMP                                     MySQLError = 3226
+	ER_XA_REPLICATION_FILTERS                                                        MySQLError = 3227
+	ER_CANT_OPEN_ERROR_LOG                                                           MySQLError = 3228
 )
 
 //go:generate stringer -type=MySQLError
